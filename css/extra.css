@@ -1,0 +1,423 @@
+* {
+    --border: 1px solid var(--dark);
+    --dark: #6b1e1e;
+    --lite: #f7dadaa4;
+}
+
+::selection {
+    background-color: var(--dark);
+    color: var(--lite);
+}
+
+body {
+    display: flex;
+    background-repeat: repeat;
+    background-attachment:fixed;
+    background-color:#f7dadaa4;
+    background-blend-mode: multiply;
+    background-image: url(/img/bg-index.png);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.c1 {
+    width: 30em;
+    height: fit-content;
+    margin-top: 80px;
+    display:flex;
+    flex-direction: row;
+
+}
+
+.c-left {
+    pointer-events: none;
+    height: 34em;
+    width: 26em;
+}
+
+.c-left > p {
+    pointer-events: all; 
+    margin-top: -2em;
+    margin-left: 4.6em;
+    color: 	#f0c1c1;
+}
+
+.c-right {
+    font-weight: bold;
+    flex-flow: column;
+    align-items:end;
+    justify-content: end;
+    margin-top: auto;
+    margin-bottom: 0em;
+    padding-left: 0.8em;
+}
+
+a {
+    color:	#9c5757;
+    display: block;
+}
+a:visited, .sleeve > a:visited {
+    color:	#4b0b0b;
+}
+
+.hover {
+    transition: all 0.26s ease-in-out;
+}
+.hover:hover {
+    letter-spacing: 0.08em;
+
+}
+
+.border-round {
+    border-width: 7px;
+    border-style: solid; 
+    border-image: url("/img/border-round.png") 8 round; 
+    background-clip: padding-box;
+}
+
+.deco {
+    pointer-events: none;
+    width: 0%;
+    height: 0%;
+}
+/* img */
+#puff {
+    position: absolute;
+    width: 12em;
+    rotate: -8deg;
+    margin-top: 10.8em;
+    margin-left: -5em;
+}
+#lace {
+    position: absolute;
+    z-index: -1;
+    width: 11em;
+    rotate: -2deg;
+    margin-top: 12.4em;
+    margin-left: -4.3em;
+} 
+
+
+/* MUSIC PAGE*/
+.music {
+    display: flex;
+    flex-direction: column;
+    background-repeat: repeat;
+    background-attachment:fixed;
+    background-color: #f0c1c1;
+    background-blend-mode: multiply;
+    background-image: url(/img/bg-index.png);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;    
+    }
+
+    .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .main-container {
+    display: inherit;
+    border: 1px solid black; 
+    width: 36.2em; 
+    height: 30em; 
+    margin-top: 8em;
+    background-color: rgba(212, 144, 144, 0.395);
+    }
+
+    .left {
+    border: none; 
+    max-width: 16em;
+    background-color: #9c5757;
+    z-index: 1;
+    border-right: 1px dashed #552f2f;
+    }
+
+    .right {
+    width: 28em; 
+    margin-left: 0em;
+    background: rgba(201, 131, 131, 0.523);
+    backdrop-filter: blur(0.2px);
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.073);
+        /* From https://css.glass */
+    -webkit-backdrop-filter: blur(0.2px);
+    padding-bottom: 2em;
+    }
+
+    .want {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 28em;
+        width: 21em;
+        max-height: 28em;
+        margin: 1em 0em 0em -0.1em;
+        border-right: none;
+        padding-left: 1em;
+        border: 1px solid black;
+        border-left: none;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none;
+
+    }
+
+    .want-cont {
+        display: flex;
+        flex-flow: row;
+        width: 20em;
+       
+        height: fit-content;
+        margin: 0em 2.8em 0.6em .2em;
+        border: 1px solid black; 
+        border-left: none;
+        padding-right: 0.8em;
+     
+        background: rgba(200, 128, 128, 0.752);
+
+    }
+
+    .want-cont > .wc-left > h1 {
+        font-size: 1.2em;
+        font-family: sans-serif;
+    }
+
+    .want-cont > .wc-left > .oversize {
+        font-size: 1.1em;
+    }
+
+    .wc-left > h2 {
+        font-size: 1em;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: -0.8em;
+    }
+
+    .wc-left > p {
+        margin-top: -0.6em;
+        font-size: 0.96em;
+        
+
+    }
+
+    .wc-left {
+        height: fit-content;
+        margin-top: 0em;
+    }
+    #cont-1 {
+        margin-top: 0.6em;
+    }
+
+    #cont-1 > p {
+        margin-left: 0.8em;
+    } 
+
+    .album {
+        height: 9em;
+        margin-top: 1em;
+        margin-left: 4%;
+        margin-right: 0.6em;
+        padding-top: 0.2em;
+        padding-bottom: 1em;
+    }
+    .sleeve {
+        position: absolute; 
+        rotate: -90deg;
+        margin-top: 5.2em;
+        margin-left: -4em;
+        font-size: x-large;
+        color: 	#d49090;
+    }
+
+    .sleeve > a {
+        font-size: inherit;
+        display: inline;
+        color: inherit;
+        text-decoration:underline solid; 
+        text-underline-offset: 0.14em;
+    }
+    .has {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black; 
+        margin: 1em 1em 1em 3.2em; 
+        width: 10em;
+        height: 28em; 
+        background-color: rgba(212, 144, 144, 0.395);
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: #d49090 transparent;
+        row-gap: 0.4em;
+    }
+
+    .has > img {
+        padding-left: 8%;
+        width: 8em;
+    }
+
+    .tippy-box[data-theme~='music'] {
+    background-color: #d49090;
+    color: #4b0b0b;
+    }
+
+    /* deco */
+    #h-music {
+        position: absolute;
+        width: 18em;
+        z-index: 3;
+        margin-top: 23em;
+        margin-left: -41em;
+    }
+
+    .cd {
+        position: absolute;
+        z-index: -1;
+        width: 28em;
+        margin-top: 8em;
+        margin-left: -2em;
+        opacity: 90%;
+        animation: cd 18s linear infinite;
+    }
+
+    @keyframes cd {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* TRINKETS PAGE */
+/* body class is music */
+.trinket {
+    /* background-color: #f7d2d2; */
+    background-color: #f5d7d7;
+}
+.music-wrapper {
+ width: 40em;
+ height: 36em;
+ overflow-y: scroll;
+ scrollbar-width: none;
+     background-color:#e6c1bc;
+z-index: 1;
+ margin-top: 2.6em;
+ border: var(--border);
+ padding: 1em;
+}
+
+.t-left {
+     border: var(--border);
+
+}
+
+.stationery {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    max-height: 10em;
+    border-style: dashed;
+
+}
+
+.t-left > .t-left {
+    margin: 0.6em;
+}
+
+.buddy-scroll {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    max-height: 8em;
+}
+
+.trinket-footer {
+border: var(--border);
+background-color: #e6c1bc;
+border-style: dashed;
+box-sizing: border-box;
+ padding: 0.2em;
+ height: 2em;
+ margin-top: 0.6em;
+ width: 42em;
+ flex-direction: column;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.trinket-footer > p {
+    font-size: small;
+}
+
+legend {
+    font-weight:600;
+    color: var(--dark);
+}
+
+legend > a {
+    display: inline;
+    text-decoration: wavy underline var(--dark);
+
+}
+
+legend > a:visited {
+    color: var(--dark);
+}
+
+hr {
+    border: 0.4px dashed var(--dark);
+    margin: -0.2em 0 0.6em 0;
+}
+
+.t-left:hover, legend:hover {
+    text-transform:uppercase; 
+    font-style: italic;
+}
+
+
+fieldset > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: none;
+    font-style: normal;
+    text-align:left;
+
+}
+
+.trinket-img {
+    height: 8em;
+    margin-right: 0.8em;
+
+}
+
+.hirono {
+    height: 12em;
+}
+
+#monograph {
+    height: 8em;
+}
+
+
+.field-tent > p {
+    margin: 0.4em;
+    color: var(--dark);
+    
+}
+.absolute {
+    position: absolute;
+}
+
+#trinket-stamp {
+    width: 9.2em;
+    margin-bottom: 30em;
+    margin-left: 40em;
+    z-index: 2;
+}
+.music-wrapper:hover, .t-left:hover, fieldset:hover, legend:hover  {
+    z-index: 3;
+}

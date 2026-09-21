@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shrines. </title>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon.ico">
+  <link rel="stylesheet" href="/css/flip.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="bigcheese">
+<!--prev btn-->
+  <button id="prev-btn">
+    <h2>←</h2>
+  </button>
+
+<!--book-->
+
+<div id="book" class="book"> 
+    <!--paper 1-->
+      <div id="p1" class="paper">
+          <div class="front cover">
+            <div id="f1" class="front-content">
+              <h1 class="title">SHRINE</h1>
+              <h1 class="title-2">NOTES</h1>
+              <section class="title-footer">
+                <p>2-Page Memo Book</p>
+                <p>Durable Materials/Made in the M.W.</p>
+              </section>
+            </div>
+          </div>
+          <!--b1-->
+          <div class="back cover">
+            <div id="b1" class="back-content">
+              <section class="title-footer">
+                <p>If lost, please call 1-800-WABIE</p>
+                <p>Start date: 15/8/2026</p>
+                <p># of TBD Shrines: 0</p>
+                <p># of Shrines: 2</p>
+                <p>Click on an image to view a shrine!</p>
+              </section>
+              
+            </div>
+          </div>
+      </div>
+<!--paper 2-->
+      <div id="p2" class="paper">
+          <div class="front">
+            <div id="f2" class="front-content">
+
+              <div class="shrine">
+                <a href="/shrine-yorushika.html">
+                  <img id="yrsk" src="/img/shrine-yorushika.png">
+                </a>
+              </div> 
+              <!--OFF SHRINE-->
+              <div class="shrine">
+                <a href="/shrine-off.html">
+                  <img id="off" src="/img/shrine-off-judge.png">
+                </a>
+              </div>
+              <!--P3 SHRINE-->
+              <div class="shrine">
+                <a href="/shrine-p3.html"></a>
+              </div>
+              
+            </div>
+          </div>
+          <!--b1-->
+          <div class="back">
+            <div id="b2" class="back-content">
+              <h2>nothing to see here</h2>
+            </div>
+          </div>
+      </div>
+<!--paper 2-->
+      <div id="p3" class="paper">
+          <div class="front">
+            <div id="f3" class="front-content">
+              <h2>ANTI SHRINES</h2>
+            </div>
+          </div>
+          <!--b1-->
+          <div class="back cover">
+            <div id="b3" class="back-content">
+            </div>
+          </div>
+      </div>
+</div>
+
+  <!--next btn-->
+  <button id="next-btn">
+      <h2>→</h2>
+
+  </button>
+</div>
+<!-- end of big cheese, start of little cheese-->
+ <div class="littlecheese">
+  <p> <a href="extra.html" class="ink">extras.</a> - <a href="home.html" class="ink">home.</a></p>
+ </div>
+
+<script>
+// ref 
+const prevBtn = document.querySelector("#prev-btn");
+const nextBtn = document.querySelector("#next-btn");
+const book = document.querySelector("#book");
+
+const paper1 = document.querySelector("#p1");
+const paper2 = document.querySelector("#p2");
+const paper3 = document.querySelector("#p3");
+// ev listeners 
+
+prevBtn.addEventListener("click", goPrevPage);
+nextBtn.addEventListener("click", goNextPage);
+
+// func
+let currentLocation = 1;
+let numOfPapers = 3;
+let maxLocation = numOfPapers + 1; 
+
+function openBook() {
+  book.style.transform = "translateX(50%)";
+  prevBtn.style.transform = "translateX(-180px)";
+  nextBtn.style.transform = "translateX(180px)";
+
+}
+
+function closeBook(isAtBeginning) {
+  if(isAtBeginning) {
+    book.style.transform = "translateX(0%)";
+  } else {
+    book.style.transform = "translateX(100%)";
+  }
+
+  prevBtn.style.transform = "translateX(0px)";
+  nextBtn.style.transform = "translateX(0px)";
+  
+}
+
+function goNextPage() {
+  if(currentLocation < maxLocation) {
+    switch(currentLocation) {
+      case 1: 
+        openBook();
+        paper1.classList.add("flipped");
+        paper1.style.zIndex = 1;
+        break;
+      case 2: 
+        paper2.classList.add("flipped");
+        paper2.style.zIndex = 2;
+        break;
+      case 3: 
+        paper3.classList.add("flipped");
+        paper3.style.zIndex = 3;
+        closeBook();
+        break;
+      default: 
+        throw new Error("unkown state");
+    }
+    currentLocation++;
+  }
+}
+
+function goPrevPage() {
+  if(currentLocation > 1) {
+    switch(currentLocation) {
+      case 2: 
+        closeBook(true);
+        paper1.classList.remove("flipped");
+        paper1.style.zIndex = 3;
+        break;
+      case 3: 
+        paper2.classList.remove("flipped");
+        paper2.style.zIndex = 2;
+        break;
+      case 4: 
+       openBook();
+        paper3.classList.remove("flipped");
+        paper3.style.zIndex = 1;
+        break;
+      default: 
+      throw new Error("unknown state");
+      }
+
+
+      currentLocation--;
+  }
+  
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+:root {
+	--ink: rgb(58, 40, 40);
+	--written: darkblue;
+}
+
+body {
+    background-size: 26em;
+    background-color: #0b3c6e58;
+    background-blend-mode: multiply;
+    background-image: url(/img/bg-index.png);
+}
+
+.fun {
+	position: relative;
+}
+
+#stamp {
+	margin-left: 14em;
+	position: absolute;
+	width: 9em;
+	filter: opacity(23.6%) brightness(0) saturate(100%) invert(92%) sepia(16%) saturate(390%) hue-rotate(3deg) brightness(98%) contrast(94%);}
+
+#stampreal {
+	position: absolute;
+	width: 9em;
+	margin-left: 14em;
+}
+
+#flower1 {
+position: absolute;
+	width: 9em;
+	margin-top: 17.8em;
+	margin-left: 12.8em;
+}
+
+#flower2 {
+	position: absolute;
+	width: 17.4em;
+	transform: rotate(2deg);
+	margin-left: 1.2em;
+	margin-top: 12em;
+}
+
+.main-cont {
+	
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 24em;
+}
+
+.main-cont:hover > .postcard{
+	cursor: pointer;
+	transform: rotateY(180deg);
+}
+
+.postcard {
+	display: flex;
+	flex-flow:  column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	transition:all ease-in-out 1.4s;
+	transform-style: preserve-3d;
+
+}
+
+
+.front, .back {
+	border: 1px dashed rgba(201, 187, 187, 0.504);
+	width: 45em;
+	height: 30em;
+	border-radius: 0.4em;
+	background-image: url(/img/bg-paper.webp);
+	background-blend-mode:multiply;
+	background-color: rgb(241, 239, 234);
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.front {
+	display: flex;
+	padding: 1.2em;
+	flex-flow: column wrap;
+	align-items: center;
+	gap: 1em;
+}
+
+.front-top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	padding-left: 1em;
+	height: 2.8em;
+	letter-spacing: 0.18em;
+	text-underline-offset: 0.7em;
+	text-decoration: underline 1.6px var(--ink);
+}
+
+
+.left-right-cont {
+	display: flex;
+	flex-direction: row;
+}
+
+.front-left, .front-right {
+	width: 22em;
+	height: 25em;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+
+}
+
+.front-left {
+	padding-right: 1em;
+	
+	border-right: 1.6px solid var(--ink);
+}
+
+.front-right {
+	box-sizing: border-box;
+	padding-right: 7.3em;
+	padding-left: 1em;
+
+}
+
+
+.back {
+	transform: rotateY(180deg);
+	padding: 1.2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+p {
+	color: var(--written);
+	text-align: left;
+	margin-top: -0.2em;
+	font-family: Courier, monospace;
+}
+
+
+h2 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 1.6em;
+  font-style: normal;
+  color: var(--ink);
+}
+
+h3 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 1.1em;
+  font-style: normal;
+  letter-spacing: 0.6px;
+  color: var(--ink);
+}
+
+a {
+	color: var(--written)
+}

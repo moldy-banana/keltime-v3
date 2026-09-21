@@ -1,0 +1,284 @@
+/* test css*/
+/*scroll*/
+
+@font-face {
+    font-family: "Lexend-Regular";
+    src: url(/fonts/Lexend-VariableFont_wght.ttf) format(ttf);
+    font-style: normal;
+}
+
+.footer {
+    font-family:'Courier New';
+	font-size:x-small;
+	display: inherit;
+	margin-top: 0.6em;
+	justify-content: center;
+}
+/* dark hour 10-2AM*/
+
+
+/* regular page stuff */
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 32rem;
+    min-width: 3em;
+    margin-right: 0.6rem;
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+}
+
+.about { /* adds a border around stuff*/
+   border: #022954 solid 1px;
+   background-color: transparent;
+}
+
+.section-2 {
+    margin-top: 0.4em;
+    max-height: 8em;
+}
+
+.section-2-text {
+   height: 100%;
+   margin-left: -0.4em;
+}
+
+.section-2-text > h3 {
+    margin-left: 1em;
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-box {
+    margin-left: 0.4em;
+    width: 16em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    scrollbar-width: thin;
+	scrollbar-color: #f2c3c3 transparent;
+    
+}
+.music-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.music-image {
+    width: 8em;
+    position: inline;
+}
+.music-lastfm {
+    margin-top: -1em;
+    margin-left: 1em;
+    margin-right: 0em;
+}
+
+.music-artist {
+    margin-top: -1em;
+}
+
+/* spaces the text away from the 'about' border. */
+.text-spacing {
+    margin: 1em;
+}
+
+.center { /*puts the footer <p> into the center */
+    display: flex ;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    justify-content: center;
+    background: #354C7C;
+    background: linear-gradient(90deg,rgba(53, 76, 124, 0.64) 6%, rgba(255, 255, 255, 0) 30%); 
+
+    /*  border:  0.008em solid #022954; */
+}
+
+p {
+    font-family:'Courier New', monospace;
+}
+
+ul {
+    font-family:'Courier New';
+    font-size: 1em;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+	font-family: 'Courier New';
+    font-weight: 540;
+    transition: all 0.2s ease-in;
+}
+
+#border-left-niche {
+    /*FOR THE NAV BAR THAT NEEDS IT*/
+     border-left: 0.008em solid #8695B8 ;
+
+}
+
+.no-border {
+    border: none;
+}
+
+a:hover {
+    color:#f2c3c3;
+    letter-spacing: 0.1em;
+}
+
+.button{
+    image-rendering: pixelated;
+}
+
+.album-art {
+   max-width: 6em; 
+}
+
+.aa-container {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content:space-evenly;
+    max-width: 100%;
+}
+
+
+/* About.html Section Tabs*/
+.tab {
+    overflow: hidden;
+    border-left: 0px;
+
+}
+.tab button {
+    background-color: transparent;
+    border: 1px solid black; 
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+.tab button.active {
+    background-color: #f2c3c3;
+}
+
+.tabcontent {
+    display: none;
+    border: 1px solid black;
+    margin-top: 0.6em;
+}
+
+.tab-content-padding {
+    padding-left: 0.8em;
+}
+/* ABOUT ME PAGE CHARACTER TAB*/
+.char-contain {
+	border: 1px black solid;
+	margin: 1em;
+	max-height: 9.3em;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+	scrollbar-color: #f2c3c3 transparent;
+	overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.char-contain-min {
+    overflow-y: scroll;
+	scrollbar-width: thin;
+	scrollbar-color: #f2c3c3 transparent;
+	overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    max-height: 9.3em;
+}
+.char {
+    margin-top: 0.6em;
+    display: inherit;
+	max-height: 100%;
+	width: 8em;
+	border: 1px #022954 solid;
+	
+}
+li {
+    padding-bottom: 0.4em;
+}
+
+textarea {
+    display:inline
+}
+
+
+blockquote {
+    font-family: Courier, monospace;
+
+}
+
+/* graphics!!! */
+.no-interact {
+    pointer-events: none;
+}
+
+#himenon {
+    width: 8em;
+    position: absolute;
+    z-index: 6;
+    top: 37.4em;
+    margin-left: 6em;
+}
+
+
+#flowercharm {
+    width: 12em;
+    position: absolute;
+    z-index: 6;
+    top: 4.1em;
+    margin-left: 10em;
+} 
+
+#buddy2 {
+     width: 8em;
+    position: absolute;
+    z-index: 6;
+    top: 64.2em;
+    margin-left: 24em;
+}
+
+
+
+
+.no-move {
+    position: relative;
+}
+
+/* single image styles*/
+#rhythmring-img{
+    content: url("https://maddycha.com/rhythm-ring/imgs/widget/g2.png") !important;
+}
+
+#rhythmring *{
+    color: black;
+    fill: black;
+}
+
+#rhythmring{
+    width: 10em;
+}

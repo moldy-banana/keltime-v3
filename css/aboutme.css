@@ -1,0 +1,401 @@
+* {
+    --border: 0.4em;
+    --b1:rgba(249, 211, 211, 0.627);
+    --b2:rgba(250, 242, 242, 0.392);
+    --boxshadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.151);
+
+}
+body {
+    background-size: 26em;
+    background-color: #c7e0ede8;
+    background-blend-mode: multiply;
+    background-image: url(/img/bg-index.png);
+}
+
+::selection {
+	background: #022954;
+	color:#eaebfe;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tiny {
+    font-size: 0.9em;
+}
+/* status cafe */
+    #statuscafe {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        text-align: center;
+        padding: 0.6em 0 0.6em 0;
+        background-color: var(--b1);
+        border: 1px dashed black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 0.8em;
+        margin-bottom: 1em;
+
+    }
+    #statuscafe-username {
+        font-family: Courier;
+        margin-bottom: .5em;
+        margin-left: 1em;
+    }
+    #statuscafe-content {
+        font-size: 1em;
+    }
+    
+/*discord stats*/
+    #status-blob {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    /* margin top to align is prob bad but idk how to css... */
+    margin-top: 2px;
+    }
+
+    #status-details {
+    margin: 0;
+    padding-right: 6px;
+    }
+
+    .status {
+    display: flex;
+    font-size: 0.8em;
+    flex-direction: row;
+    padding: 0.5em;
+    justify-content: center;
+    border: 1px dashed black;
+    background-color: var(--b1);
+    margin-bottom: 0.6em;
+    margin-top: -0.2em;
+    }
+
+.container-main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+        z-index: 2;
+
+}
+
+.main {
+ margin-top: 4em;
+ border: 1px solid black;
+ border-radius: var(--border);
+ height: fit-content; 
+ width: 59.9em;
+ background-color: var(--b1);
+ display: flex;
+ flex-flow: row wrap;
+ padding: 1em;
+ column-gap: 1em;
+ box-shadow: var(--boxshadow);
+
+}
+
+.main-left {
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px dashed black;
+    background-color: var(--b2);
+    border-radius:  var(--border);
+    width: 16em;
+    padding: 1em;
+ box-shadow: var(--boxshadow);
+
+}
+/*
+.main-right:hover {
+    z-index: 6;
+    background-color:rgba(237, 225, 228) ;
+}
+ */
+/* left side */ 
+    .pfp {
+        border: 1px solid rgb(32, 50, 119);
+        border-radius: var(--border);
+        background-image: url(/img/jb-pfp.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 16em;
+        height: 16em;
+
+
+    }
+
+    .container-nav {
+        display: flex;
+        gap: 1em;
+        flex-direction: column-reverse;
+
+    }
+
+    .nav {
+        border: 1px dashed black;
+        text-align: center;
+        padding: 0.4em;
+        text-decoration: none;
+        color:rgb(30, 52, 129);
+        transition: all 0.2s ease-in-out;
+        background-color: var(--b1);
+    }
+
+    .nav:hover {
+    color: #2e00fc;
+    letter-spacing: 0.1em;
+    }
+
+.main-right {
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px dashed black;
+    background-color: var(--b2);
+    border-radius:  var(--border);
+    width: 38.7em;
+    max-height: 40em;
+    padding: 0.2em 1em 0 1em;
+    padding-top: 0.2em;
+ box-shadow: var(--boxshadow);
+
+}
+
+.container-mright {
+    display: inherit;
+    flex-flow: row nowrap; 
+    gap: 1em;
+
+}
+
+.now {
+    border: 1px dotted black;
+    height: 5.38em;
+    min-width: 17em;
+    padding: 0.4em;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    font-size: 0.98em;
+  scrollbar-color: navy rgba(151, 151, 151, 0);
+}
+
+.m-r-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 0.88em;
+}
+
+.stamps {
+    margin-top: 1em;
+    max-width: 14em;
+    min-width: 14em;
+    height: 12em;
+    gap: 0.4em;
+    border: 1px dotted black;
+    padding: 0.4em;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: navy rgba(151, 151, 151, 0);
+
+
+}
+.musica {
+    height: 12em;
+    min-width: 21.8em;
+    padding-left: 0.8em;
+}
+
+.musica:hover {
+    background-color: #ede2e5;
+    z-index: 5;
+}
+
+.musica > ul  {
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
+  .musica > ul > li::before {
+    content: '-';
+    margin-right: 1em;
+  }
+
+.container-cool {
+    position: relative;
+}
+/*DECO IMAGES*/
+#mp3{
+    position: absolute;
+    width: 16em;
+    z-index: 1;
+    margin-top: 3em;
+    margin-left: 25em;
+    rotate: 89deg;
+}
+#bear {
+    position: absolute;
+   margin-top: 34em;
+   margin-left: 20em;
+    z-index: 1;
+    width: 14em;
+    transition: all ease-in 0.2s;
+}
+
+#bear:hover {
+    transform: rotate(3deg);
+}
+
+/*LAST FM*/
+
+.container-lastfm {
+    height: auto;
+    max-height: 6em;
+    width: 20em;
+    border: 1px dotted black;
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.8em;
+    gap: 1em; 
+}
+
+.music-image {
+    height: 6em;
+}
+
+#trackName {
+    margin-top: 1.2em;
+    margin-bottom:  -0.8em;
+}
+
+.fan {
+    width: 4em;
+}
+
+/* 100 QUESTIONS */
+
+.question {
+    background-color: #dfe8f8ad;
+    background-size: 28em;
+}
+
+.cont-question {
+    width: 40em;
+    height: 40em; 
+      border: 14px solid;
+   border-image: url(/img/testborder3.png) 9 round;
+    background-clip: padding-box; 
+   margin-top: 2em;
+   background-image: url(/img/bg-question1.jpg);
+   border-radius: 1em;
+    box-shadow: inset 0 0 10px 2px #0000004c;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 0.4em;
+}
+
+h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    filter: drop-shadow(2px 2px 2px white);
+    text-shadow: white 2px 2px 2px;
+}
+
+h4 > a {
+ color: navy;
+ text-decoration-style: wavy;
+ font-size: 0.9em;
+}
+
+.cont-question-white {
+
+    width: 34em; 
+    max-height: 30em;
+    background-color: rgba(230, 240, 248, 0.922) ;
+    border-radius: 1em;
+    border: 2px dashed #8a743077;
+    display: flex;
+    flex-direction: column;
+    padding: 0.6em;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: navy rgba(151, 151, 151, 0);
+    box-shadow: inset 0 0 10px 1px #0000001f;
+}
+
+/*100 questions PNG */
+
+dt {
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: navy;
+}
+
+dd {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#tape1 {
+    position: absolute;
+    width: 6.2222em;
+    margin-top: 7.3em;
+    margin-left: 13em;
+    z-index: 3;
+}
+
+#tape2 {
+    position:absolute;
+    width: 6.2222em;
+    margin-top: 33em;
+    margin-left: -19.6em;
+    rotate: 4deg;
+    z-index: 3;
+}
+
+#fish {
+ position: absolute;
+ width: 10em;
+ margin-top: 36em;
+    z-index: 3;
+ margin-left: 16em;
+ transition: all ease 0.4s;
+}
+
+#fish:hover {
+    transform: translateX(-20%);
+}
+
+
+#stamp-r {
+ position: absolute;
+ width: 10em;
+ margin-top: 2em;
+ margin-left: -24em;
+ z-index: 1;
+     transition: all ease-in-out 0.4s;
+
+}
+
+#stamp-r:hover {
+    transform: translateX(-40%);
+
+}
+
+#stamp-r:hover + #charm-blueclock {
+        transform: translateX(-38%);
+
+}
+
+#charm-blueclock {
+     position: absolute;
+ width: 16em;
+ margin-top: 2em;
+ margin-left: -24em;
+ z-index: 0;
+    transition: all ease-in-out 0.6s;
+
+}

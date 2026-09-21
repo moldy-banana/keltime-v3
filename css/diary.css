@@ -1,0 +1,319 @@
+/* who in GOD'S NAME decided to use THREE different stylesheets? 
+not me, nope. for sure... lowkirkenuinely i don't even know anymore
+i am not a pro gamer </3 */ 
+:root {
+  --l: #F1F3E0;
+  --lm: #D2DCB6;
+  --m:#A1BC98;
+  --d:#778873 ;
+  --border: 1px solid var(--d);
+  --scrollbar-c: var(--m) transparent;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url(/fonts/jost/Jost-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+body {
+  display: flex;
+}
+
+
+.diary {
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.2em;
+}
+
+.footer { 
+	font-family:'Courier New';
+	font-size:x-small;
+	display: inherit;
+	margin-top: 0.8em;
+	justify-content: center;
+}
+
+.diary-image {
+    margin-left: 3.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    transition: 0.4s ease-in-out all;
+}
+
+.diary-image:hover{
+  transform: scale(110%) rotate(4deg);
+
+}
+
+h3 {
+    font-family: monospace;
+}
+
+img {
+  max-width: 14em;
+}
+
+ol {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.cd {
+  margin-left: 18%;
+  transform: rotate(80deg);
+}
+
+/* Style the tab */
+.tab {
+  align-self: flex-start;
+  border: 1px solid #022954;
+  margin-top: 0.6em;
+  background-color: aliceblue;
+  width: 11.8em;
+  height: 20em;
+  max-height: 20em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #f2c3c3 transparent;
+  
+}
+
+.tab:hover {
+  z-index: 6;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #022954;
+  padding: 0.8em 0.2em 0.8em 0.6em;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor:crosshair;
+  transition: 0.2s;
+  font-size: 1em;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #f2c3c3;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #354c7c;
+  color: #EAEBFE;
+  
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: inline-block;
+  align-self: flex-end;
+  padding: 0px 12px;
+  border: 1px solid #022954;
+  width: 98%;
+  margin-left: 0.6em;
+  height: 20em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #f2c3c3 transparent;
+  
+}
+
+
+.no-interact {
+  pointer-events: none;
+  display: absolute;
+}
+.hover-rotate {
+  transition: 0.4s ease-in-out;
+}
+.hover-rotate:hover {
+  transform: rotate(12deg);
+}
+
+/* graphics */
+#stamp {
+ width: 80px; 
+ z-index: 5;
+ position: absolute;
+ top: 290px;
+ margin-left: 14.2em;
+ rotate: 9deg;
+}
+
+#lamb {
+  position: absolute;
+  max-width: 12em;
+  z-index: 2;
+  top: 20.4rem;
+  margin-left: 11.4rem;
+  rotate: -10deg;
+}
+#miffybook {
+  position: absolute;
+  max-width: 8rem;
+  z-index: 1;
+  top: 37.8em;
+  margin-left: -18rem;
+}
+#mono {
+  position: absolute;
+  max-width: 22em;
+  z-index: 1;
+  rotate: 96deg;
+  top: 32rem;
+  margin-left: 9rem;
+}
+
+#tobi {
+  width: 8em; 
+  z-index: 1;
+  position: absolute;
+  top: 16.2rem;
+  margin-left: -18rem;
+}
+
+#mahiru {
+    width: 7.8em; 
+  z-index: 1;
+  position: absolute;
+  top: 12.8rem;
+  margin-left: 9rem;
+}
+
+/* status.cafe */
+#statuscafe {
+    padding: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: aliceblue;
+    border: 1px solid #022954;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    max-height: 70px;
+}
+#statuscafe-username {
+  color: #022954;
+  font-size: x-small;
+    margin-bottom: .5em;
+  padding-top: 0.5em;
+  margin-left: 32em;
+}
+
+#statuscafe-username > a {
+  display: none;
+}
+#statuscafe-content {
+    margin: 0.6em 1em 0em 1em;
+}
+
+/* BLOG COLOR CHANGe THINGIES */
+
+body.blog {
+  background-blend-mode: multiply;
+  background-color: #a2b2a22d;
+  background-image: url(/img/bg-index.png);
+  ::selection{
+    background-color: var(--d);
+    color: var(--l);
+  }
+  
+  .title {
+background: #778873;
+background: linear-gradient(90deg,rgba(119, 136, 115, 0.84) 1%, rgba(241, 243, 224, 0) 34%);  }
+  a:hover {
+    color: var(--m);
+  }
+  a {
+    columns: var(--d);
+  }
+
+  .nav-main-spacer {
+    background-color: #a2b2a21c;
+  }
+
+  .nav1 {
+    border-color: var(--d);
+    background-color: #a2b2a21c;
+  }
+  #border-left-niche {
+    border-color: var(--d);
+    background-color: #a2b2a21c;
+  }
+
+  .tab {
+  border: var(--border);
+  background-color: #d5dad5a1;
+  scrollbar-color:  var(--scrollbar-c);
+  color: var(--d);
+  min-height: 24em;
+  max-height: 24em;
+ }
+
+
+ /* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--lm);
+}
+.tab button {
+  padding-right: 2em;
+  display: flex; 
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: var(--d);
+  color: var(--l);
+  
+}
+
+/* Style the tab content */
+.tabcontent {
+  border: var(--border);
+  scrollbar-color:  var(--scrollbar-c);
+  height: 24em;
+  
+}
+
+.underline {
+  text-decoration: var(--d) wavy underline 2px;
+}
+
+.blog-a {
+  display: inline;
+  text-decoration: underline wavy 1px var(--d) ;
+  text-decoration-skip-ink: none;
+}
+
+}
+
+/* blog img*/
+#miffypeek {
+  position: absolute;
+  max-width: 5.2rem;
+  z-index: 1;
+  top: 30.9998em;
+  margin-left: -20.8rem;
+  rotate: -1deg;
+  transform: scaleX(-1);
+
+}
+
+#leafbutton {
+  position: absolute;
+  max-width: 6.2rem;
+  z-index: 1;
+  top: 12em;
+  margin-left: 12.8rem;
+  rotate: 12deg;
+}

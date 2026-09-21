@@ -1,0 +1,10 @@
+/*!@nkb "domain":"jbc.lol","rss":"","overflow":false,"readonly":false */
+.site-box > a > .sitefeature {visibility: true; margin-top: 2.6em; border: 1px dashed aliceblue;}
+.site-box {background-image: url("https://keltime.nekoweb.org/keltime.nekoweb.org/images/send-helpv3.gif");background-size:cover;transition:0.8s ease;}
+.site-box:hover {transform: scale(1.06);}
+.site-box:hover::after {transform:scale(1.02);transition:3s ease-in;}
+.site-box > a > span {color: #8695b8;font-family: monospace;font-size:1.2em;position:absolute;top:-20px;}
+.site-box p {transition: 0.32s ease-in-out;letter-spacing: 0.02em;color:#022954;font-family:'Courier New';position:absolute;top:-164px;}
+.site-box p:hover {letter-spacing: 0.04em; color: #f2c3c3;}
+.post-box {background-color: aliceblue;border: 1px solid black;padding: 15px;border-radius: 2px;color: #354c7c;font-weight:normal;font-family:'Courier New';}
+.post-box .post-title {font-size: 18px;font-weight: bold;margin: 10px 0 0 0;font-family:'Trebuchet MS', 'Lucida Sans';}

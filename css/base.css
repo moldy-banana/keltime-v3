@@ -1,0 +1,408 @@
+* {
+    --light: ;
+    --dark: ; 
+    --border: 1px solid var(--blue5);
+    --blue1: 	#eaebfe;
+    --blue2: 	#b0b8ce;
+    --blue3:    #505a74;
+    --blue4: 	#354c7c;
+    --bg-light: aliceblue;
+    --bg-nav: var(--blue1);
+    --blue5:    #022954;
+    --blue5t: #022a5458;
+    --pink1t: #f2c3c3 ;
+    --pink2: #ae6767;
+
+    --image-filter:  grayscale(100%) sepia(79%) brightness(103%) hue-rotate(187deg) saturate(84%) contrast(108%) invert(6%);
+    --filter:  drop-shadow(8.4px 8.4px 1px var(--blue5t));
+}
+::selection {
+    background-color: var(--blue4);
+    color: var(--pink1t); 
+}
+@font-face {
+    font-family: '3d-Isometric';
+    src: url(/fonts/3d_isometric/3DIsometric-Bold.ttf);
+}
+
+.filter-image {
+    filter: var(--image-filter);
+    transition: 0.4s ease-in-out all;
+}
+.filter-image:hover {
+    filter: none;
+}
+
+
+h1 {
+    font-family: monospace, 'Noto Sans';
+    font-size: 1.8em;
+    color: var(--blue5);
+    transition: 0.2s ease-in-out all;
+}
+p {
+    font-family: monospace;
+    font-size: 1.2em;
+} 
+a {
+    color: var(--blue4);
+    transition: 0.2s all ease-in-out;
+    
+}
+a:hover {
+    letter-spacing: 0.08em;
+}
+.container-main > footer {
+    margin-top: 1em;
+}
+
+footer > p {
+    font-size: 0.9998em;
+    text-align: center;
+}
+
+body {
+    background-image: url(/img/bg-index.png);
+    background-size: 26.2em;
+    background-color: #e6ebf975;
+    background-blend-mode: multiply;
+   
+}
+
+.container-main {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* main page  */
+.main-bento {
+    gap: 1.6em;
+    margin-top: 0.2em;
+}
+.main {
+    height: 40em;
+    border: var(--border);
+filter: var(--filter);
+    background-color: var(--bg-light);
+}
+
+.header-text-main {
+    font-size: 1.4em;
+    width: fit-content;
+}
+
+
+.main-middle {
+    width: 40em;
+
+}
+.main-middle-top {
+    padding-left: 1em;
+    padding-right: 2em;
+
+}
+.h1-main-middle-top {
+    font-size: 1.2em;
+}
+.main-middle-middle {
+    padding: 0 1em 0 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    fieldset {
+        border-color: var(--blue5);
+        border-width: 1px;
+        border-style:dashed;
+    }
+   
+}
+.main-middle-middle legend {
+ font-family: monospace;
+    font-size: 1.16em;
+    font-weight: 600;
+    color: var(--pink2);
+    letter-spacing: 0.1em;
+    transition: 0.4s ease-in-out all;
+}
+.main-middle-middle  legend:hover {
+    letter-spacing: 0.2em;
+    filter: var(--filter);
+}
+
+.container-updates {
+    width: 18em;
+    height: 10em;
+    overflow-y: scroll;
+    padding-left: 1em;
+    padding-top: 0.4em;
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue5) transparent;
+
+  
+}
+.container-updates a {
+    font-size: inherit;
+    text-decoration: wavy var(--blue5) 1px underline;
+}
+.container-updates p {
+    margin-top: -0.0000000002em;
+
+}
+.container-updates:hover #birds {
+    opacity: 28%;
+}
+
+.main-right {
+    width: 18em;
+    gap: 1em;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+
+.nav-main {
+    width: auto; 
+    border-bottom: var(--border);
+    height: 2.32em;
+    display: flex;
+    flex-direction: row;
+    align-items:center; 
+
+}
+
+/* nav  */
+
+        .nav-link, .dropbtn {
+            font-family: monospace, 'Courier New', Courier;
+            font-size: 1.2em;
+                border-top: var(--border);
+            text-decoration: none;
+            display: flex;
+            flex-flow: column nowrap;
+            text-align: center;
+            padding: 0.4em;
+            width: 6em;
+             background-color: var(--bg-nav);
+            border-right: var(--border);
+            border-bottom: var(--border);
+        
+
+        }
+
+        .nav-link-last {
+            border-right: none;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown, .nav-link {
+        position: relative;
+        color: var(--blue5);
+        display: inline-block;
+        transition: 0.2s all ease-in-out;
+        }
+
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--bg-nav);
+        border-width: 0px 1px 0px 1px;
+        border-style: solid;
+        border-color: var(--blue5);
+        min-width: 160px;
+        margin-top: -1.24em;
+        z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+        color: var(--blue5);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        border-bottom: var(--border); }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: var(--pink1t);}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn, .nav-link:hover {background-color: var(--pink1t);     letter-spacing: 0.08em;}
+
+        .dropbtn:hover, .nav-link:hover {    border-bottom: var(--border);}
+/* main date  */
+
+.container-date {
+    width: 18em; 
+    height: 18em;
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+
+.date-top {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+    background-color: var(--bg-nav);
+    border-bottom: var(--border);
+    width: auto;
+    justify-content: space-around;
+    height: 2.32em;
+    align-items: center;
+}
+
+.date {
+    font-family: monospace;
+    color: var(--blue5);
+    font-size: large;
+    font-weight: 600;
+    transition: 0.2s ease-in all;
+
+}
+
+#date-day {
+    font-family: '3d-Isometric';
+    font-size: 12em;
+    color: var(--blue5);
+    margin-right: 20%;
+    margin-top: -0.04em;
+    letter-spacing: -0.2em;
+    margin-bottom: -0.24em;
+    transition: 0.2s ease-in all;
+
+
+}
+#date-day:hover, h1:hover, .date:hover {
+    filter: drop-shadow(8px 8px 0px var(--pink1t));
+
+}
+
+.date-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* the main right thing  */
+
+.main-right-bottom {
+    height: 20.8998em;
+    display: flex;
+    flex-direction: column;
+}
+.main-right-bottom-stuff img {
+    max-width: 18em;
+        min-height: 18.56em;
+
+}
+
+
+#marquee {
+    max-width: 18em;
+    overflow-x: hidden;
+}
+
+/* index specific */
+.landing-nav > p, a {
+    font-size: 1.4em;
+    font-family: monospace;
+    margin: 0;
+}
+
+.landing-nav > a {
+    text-decoration: underline wavy 1.99998px black;
+    text-decoration-skip-ink: none;
+}
+
+.container-changelog {
+    width: 8em;
+    border-radius: 0.2em;
+    height: 31.2em;
+    border: 1px dashed black;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    padding: 1em;
+   
+}
+
+
+.landing-nav {
+    margin-bottom: 1em;
+    margin-left: -1em;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    max-width:  12em;
+
+}
+
+#landing-img {
+    width: 24em;
+    z-index: 2;
+}
+
+.header-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48em;
+    height: fit-content;
+}
+
+.header-text {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#birds {
+    width: 17.2em;
+    position: absolute;
+    margin-top: 5.2em;
+    margin-left: -10em;
+    z-index: 3;
+    transition: 0.4s ease-in all;
+}
+
+#bird2 {
+     width: 9.2em;
+    position: absolute;
+    margin-bottom: 22em;
+    margin-left: 16em;
+    transition: 0.4s ease-in-out all;
+}
+#birds:hover{
+    transform: translateY(10%)translateX(-10%);
+}
+#bird2:hover {
+    transform: translateY(-10%) translateX(10%);
+}

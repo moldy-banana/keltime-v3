@@ -1,0 +1,293 @@
+
+:root {
+	--dark: #022954;
+	--medium: #354c7c;
+	--grey: #505a74;
+	--lgrey:#b0b8ce;
+	--light: #eaebfe;
+}
+
+
+
+
+
+
+/* contains the marquee */
+.nav-main-spacer {
+	background-color: aliceblue;
+	border: 1px solid black;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+	max-height: 2em;
+
+}
+
+.marquee3k__wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: -0.4em;
+	
+}
+
+.marquee3k {
+	overflow: hidden;
+}
+/* navigation bar */
+.nav1 {
+    border: none;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-width: 0.008em; 
+    border-style: solid;
+    border-color: #8695B8;
+	background-color: white;
+    position: relative;
+}
+
+h1 {
+	font-family: "Lexend Regular", monospace;
+	font-size: 1.8rem;
+	
+}
+
+h2 {
+	font-family: "Lexend Regular", monospace;
+	font-size: 1.4rem;
+}
+
+h3 {
+    font-family: "Lexend Regular", monospace; 
+    margin-bottom: -0.4em;
+
+}
+
+h4 {
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-i, .footer { 
+	font-family:'Courier New';
+	font-size:x-small;
+	display: inherit;
+	margin-top: -0.6em;
+	justify-content: center;
+}
+
+.footer {
+ margin-top: 0.8em;
+}
+
+body {
+	display: flex;
+	flex-flow: column wrap-reverse;
+	justify-content: center; 
+	align-items: center;
+	background-image: url("/img/bg-index.png");
+}
+
+.dark {
+	background-blend-mode: multiply;
+	background-color: var(--light);
+}
+
+::selection {
+	background: #022954;
+	color:#eaebfe;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.2s ease-in;
+}
+
+a:link {
+   color: #5c719e;
+   	transition: all 0.2s ease-in;
+
+}
+
+a:hover {
+   color: #f2c3c3;
+   letter-spacing: 0.1em;
+}
+
+a:visited {
+    color: #8695b8;
+	transition: all 0.2s ease-in;
+
+}
+
+a:visited:hover {
+	   color: #f2c3c3;
+
+}
+/* span is for tippy tooltips, and will be highlighted */
+
+span {
+	font-weight: 610;
+	color: #040254;
+}
+
+.underline {
+	text-decoration: #8695b8 wavy underline;
+	text-decoration-skip-ink: none;
+}
+
+/* LINKS PAGE BUTTON CONTAINER*/
+.btn-contain {
+	border: 1px black solid;
+	height: 8rem;
+	margin-bottom: 0.8em;
+	max-height: 10em;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+	overflow-x: hidden;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	scrollbar-width: thin;
+	scrollbar-color: #f2c3c3 transparent;
+
+}
+/* for the BUTTONS links*/
+#buttons { 
+	display: flex;
+	max-height: 10em;
+	padding-top: 0.6em;
+	padding-left: 0.6em;
+	padding-bottom: 0.6em;
+	gap: 0.6em;
+	flex-flow: row wrap;
+
+
+}
+
+.btn-div {
+	display: flex;
+	flex-flow: column;
+	border: 1px black solid;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: 7.8em;
+	padding: 0.6em;
+	padding-bottom: 0.2em;
+	
+}
+
+.btn-div > p {
+	font-size: 0.8em;
+	display: block;
+	text-align: center;
+}
+
+.btn-div > a, .btn-div > a > img {
+	border: none;
+	height: 2em;
+	margin-bottom: -0.2em;
+}
+
+.btn-contain > a:hover {
+	filter: none;
+}
+.btn-contain > a {
+	border: none;
+	/*sepia(0.9) hue-rotate(180deg) saturate(2.5) contrast(0.7) brightness(1.1) */
+}
+
+.noborder {
+ display: initial; 
+ border: none;
+}
+
+.btn-contain > a >img , .btn-contain > img{
+   height: 2em;
+   display: inline; 
+   flex-direction: row;
+   margin-left: 0.4em;
+   margin-top: 0.4em;
+  
+}
+
+/* Tooltip Theme */
+.tippy-box[data-theme~='keltime'] {
+  background-color: #022954;
+  color: #b0b8ce;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 500;
+}
+/* index style */
+
+.index-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4em;
+}
+.index-title > h2 {
+	font-size: 1.2rem;
+}
+
+.titlepad {
+	color: var(--dark);
+	margin: 0;
+}
+
+.index-body {
+	align-items:center;
+	
+}
+
+.index-center {
+	margin-top: -0.8em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	height: 30em;
+}
+
+.index-image {
+	background-color: transparent;
+	width: 20em;
+}
+
+.index-links {
+	height: 20.8em;
+	margin-left: 1.8em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+.sect-cont-pad {
+	border: 1px solid black;
+	height: 415.33px;
+}
+
+.expand-element {
+  width: 8em;
+  height: 0.8em;
+  letter-spacing: normal;
+  font-family: "Lexend-Regular", monospace;
+  font-size: 1.4em;
+  transition: all 0.3s ease-in-out;
+  text-wrap: nowrap;
+      color: #f2c3c3;
+
+
+}
+
+.expand-element:hover {
+	/* transform: scale(1.3, 1.3);*/
+	letter-spacing: 0.1em; 
+    color: #f2c3c3;
+}

@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	--ink: rgb(58, 40, 40);
+    --border: 1px solid black;
+    --strip: rgba(0, 0, 0, 0.762);
+    --pageShadow: inset 30px -24px 24px -17px rgba(99, 74, 74, 0.145);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-size: 26em;
+    background-color: #7992ab58;
+    background-blend-mode: multiply;
+    background-image: url(/img/bg-index.png);
+}
+
+.bigcheese { /* container for book and arrows */
+display: flex ;
+}
+
+.littlecheese {
+    margin-top: 1em;
+}
+
+/* book */
+.book {
+    position: relative;
+    width: 20em;
+    height: 30em;
+    transition: transform 0.4s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front, .back {
+    border-radius: 1em;
+    background-image: url(/img/bg-paper.webp);
+	background-blend-mode:multiply;
+	background-color: rgba(241, 239, 234, 0.497);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    box-shadow:  var(--pageShadow);
+
+}
+/* VERY FRONT COVER */
+.cover {
+    background-color: #f1cda5;
+    background-image: url(/img/bg-papercover.png);
+}
+
+.back {
+    z-index: 0;
+    box-shadow:  var(--pageShadow);
+}
+
+.front-content, .back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.ink {
+    color: var(--ink);
+}
+a {
+    color: var(--ink);
+    text-decoration-style: wavy;
+    text-decoration-skip-ink: none;
+}
+
+h1 {
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    font-size: 2.6em;
+     padding-left: 0.2em;
+
+    color: var(--ink);
+    font-family: "League Spartan", 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+p {
+    color: var(--ink);
+    font-size: 1em;
+    
+    font-weight: 600;
+    font-family: "League Spartan", 'Courier New', Courier, monospace;
+}
+
+.title-footer {
+    padding-top: 1em;
+    display: flex;
+    gap: 0.6em;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.title {
+  padding-top:2.2em;
+}
+
+.title-2 {
+    font-size: 2.6em;
+    letter-spacing: 0.2em;
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+.flipped .front, .flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* SHRINES */
+
+.shrine {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    color: var(--ink);
+    font-size: 0.8em;
+
+}
+#yrsk {
+    width: 8em;
+    
+}
+
+
+#off {
+    width: 6em;
+    image-rendering: pixelated;
+}
+
+
+
+/* controls */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0.4em;
+    transition: transform 0.4s;
+}
+
+button:focus {
+    outline: none; 
+}
+
+button:hover i {
+    color: blue;
+}
+
+i {
+    font-size: 1em;
+    color: red;
+}
+
+/* stack order */
+#p1 {
+    z-index: 3;
+}
+
+#p2 {
+    z-index: 2;
+}
+
+#p3 {
+    z-index: 1;
+}
+
+/* OFF SHRINE */
+
+.stop {
+    overflow: hidden;
+     width: 100%;
+ height: 100%;
+ background-size: 28em;
+    background-image: url(/img/bg-index.png);
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.34);
+    background-blend-mode: multiply;
+}
+body > .off-cont {
+
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+
+}
+
+.off-header {
+    width: 40em;
+    height: 10em;
+    background-image: url(/img/bg-off.jpg);
+    margin-top: 1em;
+    border: var(--border);
+}
+
+.absolute {
+    position: absolute;
+}
+
+.off-middle {
+    width: 40em;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.4em;
+    margin-top: 0.4em;
+
+}
+.off-middle-left {
+    width: 36em;
+    height: 20em;
+    border: var(--border);
+    padding: 1.8em;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.6em;
+    background-color: whitesmoke;
+
+}
+.off-middle-right {
+    width: 10em;
+    background-repeat: no-repeat;
+    background-position-x: -23em;
+    background-size: cover;
+    background-image: url(/img/shrine-off-scan1.png);
+    height: 20em;
+    border: var(--border);
+}
+
+
+.off-middle:hover > #fly {
+    transform: translateY(-20%)
+}
+
+.off-bottom {
+  width: 40em;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.4em;
+    margin-top: 0.4em;
+}
+
+.off-bottom-left {
+    width: 20em;
+    height: 10em;
+    border: 1px solid black;
+    background-image: url(/img/shrine-off-memories.png);
+    background-size: 24em;
+    background-position-x: center;
+    background-position-y: -1em;
+    background-repeat: no-repeat;
+}
+.off-bottom-right {
+    width: 30em;
+    height: 10em;
+    padding: 1.12em;
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+
+.off-footer {
+    width: 40em;
+    height: 2em;
+    border: 1px solid black;
+    margin-top: 0.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 0.2em;
+    z-index: 0;
+}
+
+
+#fly {
+    width: 10em;
+    z-index: 1;
+    position: absolute;
+    margin-top: -7.8em;
+    image-rendering:optimizeQuality;
+    margin-left: -4.2em;
+    transition: 1s ease-in all;
+}
+
+#ghost-1 {
+    position: absolute;
+    image-rendering: pixelated;
+    width: 6em;
+    margin-top: 0.2em;
+    margin-left: 36.8em;
+}
+
+#fatghost {
+    position: absolute;
+    margin-top: -10em;
+    transform: rotate(-50deg);
+    width: 10em;
+    margin-left: -5em;;
+    z-index: -1;
+}
+
+#ufo {
+    position: absolute;
+    margin-top: 9.2em;
+    z-index: 1;
+    transition: 0.4s ease-in all;
+
+}
+
+.off-bottom:hover > #ufo {
+    transform: translateY(-20%);
+}
+
+#zacharie1 {
+    width: 12em;
+    image-rendering: pixelated;
+    margin-top: 20.32em;
+    margin-left: 18.8em;
+    position: absolute;
+}
+#batter{
+    position: absolute;
+    transform: scaleX(-1) rotate(-10deg);
+    margin-left: 36em;
+    width: 15em;
+    image-rendering: pixelated;
+}
+.p-off, .p-off > a {
+    line-height: 110%;
+    color: var(--ink);
+}
+
+/* YORUSHIKA SHRINE */ 
+@font-face {
+    font-family: "hong";
+    src: url(/fonts/hongleixiaozhitao.ttf);
+}
+
+.yrsk {
+    overflow-y: scroll;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    overflow-x: hidden;
+    justify-content: flex-start;
+    scrollbar-width: thin;
+    overflow-y: scroll;
+
+      
+
+}
+#itte {
+    position: relative;
+    z-index: 1;
+    transform: rotate(-172deg);
+    margin-top: 20em;
+    margin-left: 40.2em;
+    transition: 1.4s ease-in all;
+}
+
+#itte:hover {
+    transform: rotate(550deg);
+}
+.yrsk-header {
+    background-size: cover;
+    width: 100%;
+    padding: 1em 2em 0;
+    height: 16em;
+    background-position-y: 40%;
+     background-image: url(/img/shrine-yorushika-header.jpg);
+
+}
+
+.yrsk-header > .hong {
+    font-family: "hong";
+    font-weight: 400;
+    font-size: 2.6em;
+}
+
+nav , footer{
+    background-color: var(--strip);
+    width: 100%; 
+    height: 2em;
+    z-index: 2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav > p, p > a , footer > p {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.yrsk-footer {
+ bottom: 0;
+}
+
+main {
+    height: fit-content;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.638);
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 20%;
+    place-items: center center;
+}
+
+.yrsk-section-top {
+    margin-top: 1em;
+    background-color:  var(--strip);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.yrsk-section-top > p {
+    color: whitesmoke; 
+    margin: 0.6em;
+}
+
+.yrsk-section, .yrsk-section-single {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 1em;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+    width: 42em;
+}
+
+.yrsk-section > img , .yrsk-section-single > img {
+    width: 10em;
+}
+.yrsk-albums {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.yrsk-section > p, .yrsk-section-single > p {
+    font-size: larger;
+    font-weight: 300;
+    line-height: 1.2em; 
+
+}
+
+.singles {
+    width: 42em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.yrsk-section-single {
+    height: 30em;
+    width: 20.5em;
+    padding-bottom: 0.2em;
+    display: flex;
+    flex-flow: column; 
+}
+
+#yrsk-logo {
+    width: 6em;
+    margin-top: 1.4em;
+}

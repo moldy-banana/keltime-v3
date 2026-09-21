@@ -1,0 +1,1 @@
+document.write('  <footer  class="about footer"><p class="text-spacing center"> v2.5 "the world in a window." // do not copy //  <a href="credits.html" class="no-border"> credits </a>  // ©2025 kel </p></footer>');

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <!--hi this was rawdogged with my bare fucking hands i hope if you're
+  inspecting the code you appreciated my website! unfortunately, this is 
+  quite messy because idk how to html css js python c++ idk man anyways 
+  DO NOT COPY, DO NOT PASTE, DO NOT STEAL... directly copying is an act that will bring 
+  me sadness
+    I put in my hours for every page created, with love (and frustration) <3 thank you!
+  -->
+    <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon.ico">
+        <title>extras.</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/extra.css">
+    </head>
+
+    <body>
+        
+        <div class="deco">
+            <img id="puff" src="/img/miffy-puff.png">
+            <img id="lace" src="/img/lace2.png">
+        </div> 
+        <div class="c1"> 
+            <div class="c-left border-round">
+                <img class="c-left" id="left-image" src="/img/bg-waiting.jpg">
+                <p> we'll all be here forever</p>
+            </div>
+            <div class="c-right">
+                <a class="hover" href="index.html">back,</a>
+                <a class="hover" href="music.html" onmouseover="music()" onmouseout="cancel()">music.</a>
+                <a class="hover" href="shrines.html" onmouseover="altars()" onmouseout="cancel()">shrines.</a>
+                <a class="hover" href="trinkets.html" onmouseover="trinkets()" onmouseout="cancel()">trinkets.</a>                              
+                <a class="hover" href="sketchbook.html" onmouseover="sketch()" onmouseout="cancel()"><s>sketchbook.</s></a>
+            </div>
+        </div>
+
+        <script> 
+            function music() {
+                document.getElementById("left-image").src = "/img/bg-bus.jpg";
+            }
+
+            function altars() {
+                document.getElementById("left-image").src = "/img/bg-windows.jpg";
+            }
+
+            function trinkets() {
+                document.getElementById("left-image").src = "/img/bg-trinkets.jpg";
+            }
+
+            function sketch() {
+                document.getElementById("left-image").src = "/img/bg-sketch.jpg";
+            }
+
+            function cancel() {
+                document.getElementById("left-image").src = "/img/bg-waiting.jpg";
+            }
+        </script>
+    </body>
