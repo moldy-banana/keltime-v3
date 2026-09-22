@@ -66,6 +66,11 @@ ol {
   transform: rotate(80deg);
 }
 
+.tabcontent h3 {
+  font-size: 1.52em;
+
+}
+
 /* Style the tab */
 .tab {
   align-self: flex-start;

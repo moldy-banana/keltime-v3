@@ -75,7 +75,7 @@ p {
 
 .container-main {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
         z-index: 2;
@@ -86,11 +86,11 @@ p {
  margin-top: 4em;
  border: 1px solid black;
  border-radius: var(--border);
- height: fit-content; 
+ height: 40em; 
  width: 59.9em;
  background-color: var(--b1);
  display: flex;
- flex-flow: row wrap;
+ flex-flow: row nowrap;
  padding: 1em;
  column-gap: 1em;
  box-shadow: var(--boxshadow);
@@ -151,7 +151,7 @@ p {
 
 .main-right {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     border: 1px dashed black;
     background-color: var(--b2);
     border-radius:  var(--border);
