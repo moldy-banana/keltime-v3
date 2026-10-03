@@ -406,3 +406,23 @@ filter: var(--filter);
 #bird2:hover {
     transform: translateY(-10%) translateX(10%);
 }
+
+/* webrings  */
+
+.webring-header {
+    margin-bottom: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.webring-container {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 28em;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+
+    
+}
