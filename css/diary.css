@@ -232,6 +232,19 @@ body.blog {
     background-color: var(--d);
     color: var(--l);
   }
+
+  .screenshot {
+    display: flex;
+    justify-self: center;
+    transition: 0.2s all ease;
+    padding: 0.2em;
+  }
+
+  .screenshot:hover {
+    transform: scale(150%);
+  }
+
+
   
   .title {
 background: #778873;
@@ -241,6 +254,12 @@ background: linear-gradient(90deg,rgba(119, 136, 115, 0.84) 1%, rgba(241, 243, 2
   }
   a {
     columns: var(--d);
+  }
+
+  p > a {
+    text-decoration: underline wavy 1.28px;
+    text-decoration-skip-ink: none;
+    display: inline;
   }
 
   .nav-main-spacer {
