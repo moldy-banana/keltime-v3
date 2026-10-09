@@ -8,6 +8,8 @@ i am not a pro gamer </3 */
   --d:#778873 ;
   --border: 1px solid var(--d);
   --scrollbar-c: var(--m) transparent;
+  /* --random-angle: random(4deg, -4deg, -2deg, 2deg, 1deg, -1deg); */
+  
 }
 
 @font-face {
@@ -16,11 +18,19 @@ i am not a pro gamer </3 */
     font-style: normal;
 }
 
+
 body {
   display: flex;
 }
-
-
+ p > a {
+    text-decoration: underline wavy 1.28px;
+    text-decoration-skip-ink: none;
+    display: inline;
+  }
+ul {
+  list-style-image: url(/img/list-bow.gif);
+  list-style-position: outside;
+}
 .diary {
     display: flex;
     flex-direction: row;
@@ -45,6 +55,10 @@ body {
 
 .diary-image:hover{
   transform: scale(110%) rotate(4deg);
+
+}
+#aiyou:hover {
+    transform: scale(140%) rotate(-2deg);
 
 }
 
@@ -256,11 +270,7 @@ background: linear-gradient(90deg,rgba(119, 136, 115, 0.84) 1%, rgba(241, 243, 2
     columns: var(--d);
   }
 
-  p > a {
-    text-decoration: underline wavy 1.28px;
-    text-decoration-skip-ink: none;
-    display: inline;
-  }
+ 
 
   .nav-main-spacer {
     background-color: #a2b2a21c;
