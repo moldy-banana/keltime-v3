@@ -178,7 +178,6 @@ a:visited, .sleeve > a:visited {
         border: 1px solid black; 
         border-left: none;
         padding-right: 0.8em;
-     
         background: rgba(200, 128, 128, 0.752);
 
     }
@@ -201,7 +200,9 @@ a:visited, .sleeve > a:visited {
     .wc-left > p {
         margin-top: -0.6em;
         font-size: 0.96em;
-        
+        max-height: 6em;
+        overflow-y: scroll;
+        scrollbar-width: none;
 
     }
 
@@ -224,6 +225,11 @@ a:visited, .sleeve > a:visited {
         margin-right: 0.6em;
         padding-top: 0.2em;
         padding-bottom: 1em;
+        transition: 0.38s all ease-in;
+    }
+
+    .album:hover {
+        transform: scale(1.4,1.4) translateX(1.4em);
     }
     .sleeve {
         position: absolute; 
