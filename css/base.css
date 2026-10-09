@@ -170,6 +170,11 @@ filter: var(--filter);
     flex-flow: column wrap;
 }
 
+.cont-blinkies {
+    display: flex;
+    gap: 0.48em;
+    margin-bottom: 0;
+}
 
 
 .nav-main {
