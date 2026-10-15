@@ -99,7 +99,7 @@ p {
 
 .main-left {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     border: 1px dashed black;
     background-color: var(--b2);
     border-radius:  var(--border);
@@ -131,6 +131,7 @@ p {
         display: flex;
         gap: 1em;
         flex-direction: column-reverse;
+        flex-wrap: nowrap;
 
     }
 

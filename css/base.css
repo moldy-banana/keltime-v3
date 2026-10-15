@@ -40,6 +40,7 @@ h1 {
     color: var(--blue5);
     transition: 0.2s ease-in-out all;
 }
+
 p {
     font-family: monospace;
     font-size: 1.2em;
@@ -63,7 +64,7 @@ footer > p {
 
 body {
     background-image: url(/img/bg-index.png);
-    background-size: 26.2em;
+    background-size: 28.2em;
     background-color: #e6ebf975;
     background-blend-mode: multiply;
    
@@ -127,7 +128,7 @@ filter: var(--filter);
     }
    
 }
-.main-middle-middle legend {
+.main-middle-middle legend, legend {
  font-family: monospace;
     font-size: 1.16em;
     font-weight: 600;
@@ -135,7 +136,7 @@ filter: var(--filter);
     letter-spacing: 0.1em;
     transition: 0.4s ease-in-out all;
 }
-.main-middle-middle  legend:hover {
+.main-middle-middle  legend:hover, legend:hover {
     letter-spacing: 0.2em;
     filter: var(--filter);
 }
@@ -453,4 +454,79 @@ filter: var(--filter);
 
 .clique-container p, .clique-container > p > a{
     font-size: 1em;
+}
+/* neighborhood - buttons - links */ 
+.button-outer {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1em;
+    
+}
+.button-outer > h1 {
+    margin-bottom: 0;
+}
+.button-cont {
+    width: 40em;
+    max-height: 18em;
+    overflow-y: scroll;
+    display: flex; 
+    flex-flow: row wrap;
+    gap: 0.8em;
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue5) transparent;
+        border: 0.02em solid var(--blue5); 
+
+}
+.button-info {
+    flex-flow: column;
+    gap: 0;
+}
+.button-cont > legend {
+    font-size: 1.4em;
+}
+
+
+
+.btn-div {
+    border: var(--border);
+    border-style: dashed;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 1em;
+    min-width: 1em;
+    width: 19.27569999999999999999999999999998em;
+    display: inherit;
+    flex-flow: column nowrap; 
+    align-items:center;
+    padding: 0.8em 0.4em 0 0.4em;
+    background-color: #354b7c19;
+
+}
+.btn-div:hover{
+    background-color: #2b437624 ;
+}
+.btn-div > p {
+    padding: 0;
+    margin-top: 0.2em;
+    text-align: center;
+}
+.wall  {
+    gap: 0;
+    margin-bottom: 0;
+    padding-top: 0.8em;
+    padding-left: 1.4em;
+    
+     a {
+    margin-top: 0.08em;
+
+    }
+    a:hover {
+        z-index: 4;
+    }
+    .button {
+    width: 88px;
+    max-height: 31px;
+    display: block;
+}
+
 }
