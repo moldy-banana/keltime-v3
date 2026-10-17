@@ -471,7 +471,7 @@ filter: var(--filter);
     overflow-y: scroll;
     display: flex; 
     flex-flow: row wrap;
-    gap: 0.8em;
+    gap: 0.6em;
     scrollbar-width: thin;
     scrollbar-color: var(--blue5) transparent;
         border: 0.02em solid var(--blue5); 
@@ -493,8 +493,8 @@ filter: var(--filter);
     box-sizing: border-box;
     margin: 0;
     min-height: 1em;
-    min-width: 1em;
-    max-width: 19.27569999999999999999999999999998em;
+    min-width: 18.4em;
+    max-width: 19em;
     display: inherit;
     flex-flow: column nowrap; 
     align-items:center;
@@ -513,8 +513,9 @@ filter: var(--filter);
 .wall  {
     gap: 0;
     margin-bottom: 0;
-    padding-top: 0.8em;
-    padding-left: 1.4em;
+    padding-bottom: 0.4em;
+    padding-top: 0.02em;
+    padding-left: 1em;
     
      a {
     margin-top: 0.08em;
@@ -529,4 +530,14 @@ filter: var(--filter);
     display: block;
 }
 
+}
+
+/* below is for the OFF webring  */
+.code {
+ font-size: 1em;
+ margin-top: -1em;
+ font-family: 'Courier New', Courier, monospace;
+}
+.mini {
+    width: 5em;
 }
