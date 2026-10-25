@@ -165,6 +165,10 @@ p {
     image-rendering: pixelated;
 }
 
+#rayquaza {
+    width: 6em;
+    image-rendering:pixelated;
+}
 
 
 /* controls */
@@ -510,4 +514,10 @@ main {
 #yrsk-logo {
     width: 6em;
     margin-top: 1.4em;
+}
+
+/* rayquaza rayq shrine  */
+.rayquaza-body {
+    background-size: 30em;
+    background-color: rgba(134, 217, 233, 0.57);
 }
