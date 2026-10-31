@@ -8,14 +8,15 @@ This is version 3 of Ellie's personal website, hosted on nekoweb.org.
 keltime.nekoweb.org is a personal website built by Ellie made for personal use on the indie web. This project was 
 written in pure HTML, CSS, and JS. 
 
-<img width="1917" height="932" alt="image" src="https://github.com/user-attachments/assets/9a2a8c42-5ca9-40e6-a584-c71e78fad05b" />
+<img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/1c87e524-6494-473d-9da4-abdabfd5f4bb" />
 
 ## Featured Pages
-- About Me
+- About me: self explanatory
 - Music: a page for album reviews
 - Shrines: pages created in tribute for a certain thing
 - Trinkets: documenting my favorite items/daily carry
 - Diary: other little things
+- Listography: a dupe listography for storing lists 
 - Links: linking to other websites and groups- the indie web is a social community!
 
 ## Optimizations
