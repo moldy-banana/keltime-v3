@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "layouts/head.html" %}
+     {% block head %}
+     {% endblock %}
+</head>
+
+<body>
+    <section class="main">
+        <header class="header">
+         <h1>{{title}} - <a href="/home.html">back to home</a> {% block returnBlog %}{% endblock %}</h1>
+        </header>
+        <main class="blog-main">
+         {% block content %}
+           {{content | safe}}
+         {% endblock %}
+        </main>
+        <footer class="header">
+            <p>made with tears and 11ty - keltime.nekoweb.org</p>
+        </footer>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+* {
+    --border: 1px solid black;
+    --b1:rgba(249, 211, 211, 0.627);
+    --b3: #c7e0ede8;
+    --b2:rgba(250, 242, 242, 0.392);
+    --boxshadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.151);
+}
+@font-face {
+    font-family: "Alagard";
+    src: url(../assets/alagard.ttf);
+}
+body {
+    background-image: url(../assets/bg-index.png) ;
+    background-size: 26.2em;
+    background-blend-mode: multiply;
+    background-color: var(--b3);
+
+}
+
+h1 {
+    font-family:  Helvetica;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+}
+
+h2 {
+    font-family: monospace;
+    margin: 0;
+}
+p {
+    font-family: monospace;
+    font-size: 1.14em;
+    margin: 0.6em 0;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+}
+.header {
+    width: 40em;
+    padding: 0.6em;
+    background-color: var(--b1);
+    border: var(--border);
+        box-shadow: var(--boxshadow);
+
+    display: inherit;
+    flex-flow: column nowrap;
+    justify-content:flex-end; 
+    align-items: flex-start;
+
+}
+
+.header p {
+    margin: 0;
+    align-self: center;
+}
+.blog-main {
+    padding: 0.6em;
+    border: var(--border);
+    box-shadow: var(--boxshadow);
+    width: 40em;
+      background-color: var(--b1);
+}
+
+/* posts */
+.post-content {
+ 
+    max-width: 38em;
+    margin: 0 0;
+
+}

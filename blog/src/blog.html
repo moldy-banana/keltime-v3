@@ -1,0 +1,15 @@
+---
+layout: layouts/base.html
+title: Desi's Blog 
+permalink: /blog.html
+---
+    <p>Hi, welcome to my blog (version 3.5) powered by <a target="_blank" href="https://11ty.dev">11ty</a> and my tears.</p>
+    <p>It's very bare bones but I don't know what to do with it either...</p>
+    <p>uhhh i uhhh enjoy i guess? _(:з)∠)_</p>
+    
+    <ul>
+        {% for post in collections.posts %}
+        <p>{% for pageItem in collections.posts %} <span>{{ pageItem.date | postDate}} </span>{% endfor %} - <a href="{{post.url}}">{{ post.data.title }}</a></p>
+        {% endfor %}
+
+    </ul>
