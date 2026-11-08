@@ -35,4 +35,4 @@ posts generate and load faster.
 - [Marquee3000](https://github.com/ezekielaquino/Marquee3000) - a marquee library 
 - [lastfm-last-played](https://github.com/biancarosa/lastfm-last-played) - a last.fm widget to show the last played song of a user on a website
 - [11ty](https://www.11ty.dev/) - a static site generator (SSG)
-- [markdown-it-attrs] - an npm package that allows classes, identifiers, and attributes to be added to markdown files
+- [markdown-it-attrs](https://www.npmjs.com/package/markdown-it-attrs) - an npm package that allows classes, identifiers, and attributes to be added to markdown files
