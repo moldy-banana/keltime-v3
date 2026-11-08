@@ -24,21 +24,45 @@ h1 {
     margin: 0;
 }
 
-h2 {
+h2, h3{
     font-family: monospace;
     margin: 0;
 }
+h3 {
+    font-size: 1.2em;
+    margin-top: 0.6em;
+}
+
 p {
     font-family: monospace;
-    font-size: 1.14em;
-    margin: 0.6em 0;
+    font-size: 1.08em;
+    margin: 0.2em 0;
+}
+a {
+    color:	#354c7c ;
+    text-decoration: 0.08em underline solid;
+    text-decoration-skip-ink: none;
+    transition: 0.18s all ease-in;
+}
+a:hover {
+    color:#ae6767;
+    letter-spacing: 0.04em;
+}
+a:visited {
+    color:#ae6767;
+}
+img {
+    max-width: 8em; 
+    display: flex;
+    justify-self: center;
+    margin-top: 0.4em;
 }
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.8em;
+    gap: 0.48em;
 }
 .header {
     width: 40em;
@@ -72,4 +96,13 @@ p {
     max-width: 38em;
     margin: 0 0;
 
+}
+
+.a-post {
+    margin-bottom: 0.12em;
+}
+
+.description {
+    margin: -0.22em;
+    font-style: italic;
 }

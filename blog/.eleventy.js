@@ -1,10 +1,10 @@
 const { DateTime } = require("luxon");
-
+const markdownItAttrs = require("markdown-it-attrs");
 
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.setUseGitIgnore(false);
-
+    eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
     eleventyConfig.addPassthroughCopy("src/css/");
     eleventyConfig.addPassthroughCopy("src/assets/");
 

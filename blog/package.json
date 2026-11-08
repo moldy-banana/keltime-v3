@@ -15,6 +15,7 @@
     "@11ty/eleventy": "^3.1.2"
   },
   "dependencies": {
-    "luxon": "^3.7.2"
+    "luxon": "^3.7.2",
+    "markdown-it-attrs": "^5.0.1"
   }
 }

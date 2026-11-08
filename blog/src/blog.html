@@ -8,8 +8,12 @@ permalink: /blog.html
     <p>uhhh i uhhh enjoy i guess? _(:з)∠)_</p>
     
     <ul>
-        {% for post in collections.posts %}
-        <p>{% for pageItem in collections.posts %} <span>{{ pageItem.date | postDate}} </span>{% endfor %} - <a href="{{post.url}}">{{ post.data.title }}</a></p>
+        {% for post in collections.posts | reverse%}
+        
+        <p class="a-post"> <span>{{ post.date | postDate}} </span> - <a href="{{post.url}}">{{ post.data.title }}</a></p>
+            <ul>
+                <p class="description">{{post.data.description}}</p>
+            </ul>
         {% endfor %}
 
     </ul>
