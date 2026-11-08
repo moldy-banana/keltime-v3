@@ -3,7 +3,7 @@ layout: layouts/post.html
 title: Media I Have Enjoyed This Past Week
 description: all good stuff.
 date: 2026-11-06
-permalink: /post2.html
+permalink: /_site/post2.html
 ---
 
 Since the Fall rowing season has ended, I have had an extra 3 hours in my day to do random shit. 
@@ -36,7 +36,7 @@ things about *Wind Breaker* is the lack of flat characters. They all get their s
 ### Endacopia (Video Game)
 You know it. You love it. You're too poor so you watched Markiplier play it. It's *Endacopia*!! Taking "a look inside", it's about a boy named Mellow who explores a bizarre and disturbing world. It's exactly this 
 kind of world that draws people in, especially me. The clown couple is the cutest honestly... 
-![the two clowns, Ticketa and Ticketo sharing a sandwich. How cute!](/assets/image.png)
+![the two clowns, Ticketa and Ticketo sharing a sandwich. How cute!](/_site/assets/image.png)
 
 ### [Racing Mount Pleasant (Live Performance)](https://www.youtube.com/watch?v=G8ADRLWMvAY){target="_blank" rel="noopener"}
 I don't know how I didn't discover *Racing Mount Pleasant* before, but this band is genuinely 
