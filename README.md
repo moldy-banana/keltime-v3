@@ -28,6 +28,7 @@ to keep things concise.
 With the introduction of v3.5, 11ty has been introduced to create a whole separate blog page. Using 11ty, blog 
 posts generate and load faster. 
 
+
 ## Credits
 - [w3css tabinators](https://www.w3schools.com/w3css/w3css_tabulators.asp) - tweaked code used for the diary and blog
 - [w3schools html dropdown bar](https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp) - tweaked html and css used for the main page dropdown menu
@@ -36,3 +37,7 @@ posts generate and load faster.
 - [lastfm-last-played](https://github.com/biancarosa/lastfm-last-played) - a last.fm widget to show the last played song of a user on a website
 - [11ty](https://www.11ty.dev/) - a static site generator (SSG)
 - [markdown-it-attrs](https://www.npmjs.com/package/markdown-it-attrs) - an npm package that allows classes, identifiers, and attributes to be added to markdown files
+
+## License 
+This project is licensed under the GNU General Public License - see the LICENSE.md file for details. 
+
