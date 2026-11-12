@@ -4,6 +4,39 @@
         <description>kill time, read my rss</description>
         <link>https://keltime.nekoweb.org</link>
 
+          <item>
+            <title>that funny feeling</title>
+            <description>
+             Too cold for t-shirts now.
+            </description>
+            <link>https://keltime.nekoweb.org/diary</link>
+            <guid>post-37</guid>
+            <pubDate>Mon, 09 Nov 2026 18:57:00 EST</pubDate>
+          </item>
+
+
+        <item>
+            <title>Yummy Media I Have Consumed This Week</title>
+            <description>
+             need something to do? I've got ideas for you! 
+            </description>
+            <link>https://keltime.nekoweb.org/_site/post2</link>
+            <guid>post-36</guid>
+            <pubDate>Sat, 07 Nov 2026 21:37:00 EST</pubDate>
+        </item>
+
+         <item>
+            <title>"Use 11ty," They said. "It would be fun and more efficient!" They said.</title>
+            <description>
+             where i've been since trying to use 11ty (and failing). the blog page is over(under)hauled...! yay!! 
+             *cries in hatred spite and frustration* 
+            </description>
+            <link>https://keltime.nekoweb.org/blog/_site/nov1-26</link>
+            <guid>post-35</guid>
+            <pubDate>Thur, 05 Nov 2026 00:50:00 EST</pubDate>
+        </item>
+
+
         <item>
             <title>Midwestern Hospitality</title>
             <description>
