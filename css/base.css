@@ -116,6 +116,79 @@ filter: var(--filter);
 .h1-main-middle-top {
     font-size: 1.2em;
 }
+.filler {
+    border: var(--border);
+    border-color: #022a548d;
+    border-style: dashed;
+    width: 14.552em;
+    height: 5.2em;
+    margin-top: -0.58em;
+    margin-right:-0.74em;
+    padding: 0em 0em 0em 0.58em;
+}
+#main-bird3 {
+    position: absolute;
+    margin-left: 8.98em;
+    margin-top: 1em;
+    width: 8em;
+    transition: 0.4s ease-in-out all;
+}
+/* status cafe */
+    #statuscafe {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 0.4em;
+        padding-top: 0.12em;
+
+    }
+    #statuscafe-username {
+        font-family: Courier;
+        font-size: 0.6em;
+        font-style: italic;
+    }
+    #statuscafe-content {
+        font-size: 0.78em;
+        text-align: left;
+        margin-left: 0.4em;
+        margin-right: 4em;
+
+    }
+#main-bird3:hover{
+    
+    animation: ktp 1s linear 1;
+}
+/* modified from animista */
+@keyframes ktp {
+  20% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.15, 0.75, 1);
+            transform: scale3d(1.15, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.15, 1);
+            transform: scale3d(0.75, 1.15, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 0.85, 1);
+            transform: scale3d(1.05, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.00, 0.95, 1);
+            transform: scale3d(1.00, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
 .main-middle-middle {
     padding: 0 1em 0 1em;
     display: flex;
@@ -640,4 +713,54 @@ pre a, pre p {
     .box {
         min-width: none;
     }
+}
+
+/* credits */
+.credits-bg {
+    padding: 0;
+    margin: 0;
+    background-image: url(/img/bg-papercover.png);
+    background-blend-mode: multiply;
+    background-color:#d9af89; 
+        overflow-y: scroll;
+}
+.credits-container {
+    height:120vh;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.receipt {
+    height: 100%;
+    border: 1px solid black;
+    box-shadow: 3px 8px 20px 6px rgba(0, 0, 0, 0.151);
+    width: 28em;
+    background-image: url(/img/bg-paper.webp);
+    margin: 0;
+    padding: 0;
+    display: inherit;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.ascii, .ascii > a {
+    white-space: pre;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.ascii > a, .ascii > a:hover {
+    color: blue;
+    transition: none;
+    letter-spacing: normal;
+
+}
+.rec-p {
+    margin: -0.6em 0 0 0;
+}
+.twoparts {
+    display: grid;
+    border: 1px solid black;
+   
 }
