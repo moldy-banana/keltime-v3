@@ -35,7 +35,7 @@ p {
         border: 1px dashed black;
         font-family: 'Courier New', Courier, monospace;
         font-size: 0.8em;
-        margin-bottom: 1em;
+        
 
     }
     #statuscafe-username {
@@ -105,6 +105,7 @@ p {
     border-radius:  var(--border);
     width: 16em;
     padding: 1em;
+    max-height: 38em;
  box-shadow: var(--boxshadow);
 
 }
@@ -126,13 +127,18 @@ p {
 
 
     }
+    .main-left > .asterism {
+        margin: 0.8em;
+        font-size: 1em;
+        text-align: center;
+        
+    }
 
     .container-nav {
         display: flex;
         gap: 1em;
         flex-direction: column-reverse;
         flex-wrap: nowrap;
-
     }
 
     .nav {

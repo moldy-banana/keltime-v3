@@ -127,10 +127,11 @@ filter: var(--filter);
     padding: 0em 0em 0em 0.58em;
 }
 #main-bird3 {
-    position: absolute;
+    position: absolute; 
     margin-left: 8.98em;
-    margin-top: 1em;
-    width: 8em;
+    margin-top: 1.12em;
+    transform: rotate(10deg);
+    width: 7.8em;
     transition: 0.4s ease-in-out all;
 }
 /* status cafe */
@@ -139,6 +140,10 @@ filter: var(--filter);
         font-family: 'Courier New', Courier, monospace;
         margin-top: 0.4em;
         padding-top: 0.12em;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content:space-around;
 
     }
     #statuscafe-username {
@@ -150,6 +155,7 @@ filter: var(--filter);
         font-size: 0.78em;
         text-align: left;
         margin-left: 0.4em;
+        margin-bottom: -2em;
         margin-right: 4em;
 
     }
@@ -160,32 +166,32 @@ filter: var(--filter);
 /* modified from animista */
 @keyframes ktp {
   20% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1)rotate(10deg);
+            transform: scale3d(1, 1, 1) rotate(10deg);
   }
   30% {
-    -webkit-transform: scale3d(1.15, 0.75, 1);
-            transform: scale3d(1.15, 0.75, 1);
+    -webkit-transform: scale3d(1.15, 0.75, 1) rotate(10deg);
+            transform: scale3d(1.15, 0.75, 1)rotate(10deg);
   }
   40% {
-    -webkit-transform: scale3d(0.75, 1.15, 1);
-            transform: scale3d(0.75, 1.15, 1);
+    -webkit-transform: scale3d(0.75, 1.15, 1) rotate(10deg);
+            transform: scale3d(0.75, 1.15, 1)rotate(10deg);
   }
   50% {
-    -webkit-transform: scale3d(1.05, 0.85, 1);
-            transform: scale3d(1.05, 0.85, 1);
+    -webkit-transform: scale3d(1.05, 0.85, 1) rotate(10deg);
+            transform: scale3d(1.05, 0.85, 1)rotate(10deg);
   }
   65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-            transform: scale3d(0.95, 1.05, 1);
+    -webkit-transform: scale3d(0.95, 1.05, 1) rotate(10deg);
+            transform: scale3d(0.95, 1.05, 1) rotate(10deg);
   }
   75% {
-    -webkit-transform: scale3d(1.00, 0.95, 1);
-            transform: scale3d(1.00, 0.95, 1);
+    -webkit-transform: scale3d(1.00, 0.95, 1) rotate(10deg);
+            transform: scale3d(1.00, 0.95, 1) rotate(10deg);
   }
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1) rotate(10deg);
+            transform: scale3d(1, 1, 1) rotate(10deg);
   }
 }
 
