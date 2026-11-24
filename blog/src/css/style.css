@@ -38,18 +38,22 @@ p {
     font-size: 1.08em;
     margin: 0.2em 0;
 }
+.post-content > p {
+    margin: 0.8em 0;
+}
 a {
     color:	#354c7c ;
     text-decoration: 0.08em underline solid;
     text-decoration-skip-ink: none;
     transition: 0.18s all ease-in;
 }
+
 a:hover {
     color:#ae6767;
     letter-spacing: 0.04em;
 }
 a:visited {
-    color:#ae6767;
+    color:#ab4848;
 }
 img {
     max-width: 8em; 

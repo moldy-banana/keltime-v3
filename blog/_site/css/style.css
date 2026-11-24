@@ -47,12 +47,13 @@ a {
     text-decoration-skip-ink: none;
     transition: 0.18s all ease-in;
 }
+
 a:hover {
     color:#ae6767;
     letter-spacing: 0.04em;
 }
 a:visited {
-    color:#ae6767;
+    color:#ab4848;
 }
 img {
     max-width: 8em; 

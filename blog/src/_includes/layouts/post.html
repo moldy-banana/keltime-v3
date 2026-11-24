@@ -4,16 +4,25 @@
 
 {% endblock %}
 
+{% set previousPost = collections.posts | getPreviousCollectionItem %}
+{% set nextPost = collections.posts | getNextCollectionItem %}
+
 {% block returnBlog %}
    - <a href="/_site/blog" id="top">back to blog</a> 
 {% endblock %}
 
  
 {% block content %}
+
 <h2><time>{{ page.date | postDate}}</time></h2>
  <article class="post-content">
     {{content | safe }}
-    <a href="#top">go back to the top?</a>
+
+   <p><a href="#top">go back to the top?</a></p>
+   <p>{% if previousPost %}<a href="{{previousPost.url}}"> ⬅ previous</a>{% endif %} | {% if nextPost %}<a href="{{nextPost.url}}">next ➡ </a>{% endif %} </p>
+   
+     
+
  </article>
    
 {% endblock %}
