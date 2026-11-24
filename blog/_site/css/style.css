@@ -38,6 +38,9 @@ p {
     font-size: 1.08em;
     margin: 0.2em 0;
 }
+.post-content > p {
+    margin: 0.8em 0;
+}
 a {
     color:	#354c7c ;
     text-decoration: 0.08em underline solid;

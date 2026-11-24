@@ -5,14 +5,15 @@
 {% endblock %}
 
 {% block returnBlog %}
-   - <a href="/_site/blog">back to blog</a> 
+   - <a href="/_site/blog" id="top">back to blog</a> 
 {% endblock %}
 
  
 {% block content %}
 <h2><time>{{ page.date | postDate}}</time></h2>
  <article class="post-content">
-    {{content | safe}}
+    {{content | safe }}
+    <a href="#top">go back to the top?</a>
  </article>
    
 {% endblock %}
