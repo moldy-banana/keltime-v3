@@ -11,10 +11,18 @@
     </head>
 
     <body class="credits-bg">
+        
         <div class="credits-container">
+          <div class="credits-deco">
+                    <img src="/img/credits-scraps.webp" id="scraps">
+                </div>
             <div class="receipt">
+                <div class="credits-deco">
+                    <img src="/img/credits-catyip.webp" alt="a cat jumping for joy" id="cat-yippee" title="someone... save me..!">
+                </div>
+                
                 <p class="ascii">
-    「 <a href="">keltime.nekoweb.org</a> 」
+    「 <a href="/home.html">keltime.nekoweb.org</a> 」
 
 ⠰⠎⠉⢶⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⢰⠊⠙⡆
 ⢸⠀⠒⢌⠣⢤⡀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⣠⠾⠁⠞⠀⡏
@@ -24,17 +32,117 @@
 ⠀⠀⠀⠀⠙⠴⠴⠚⠧⣠⢤⡴⠋⠀⠀⠘⠇⢬⡬⠼⠓⠶⠶⠊⠀⠀⠀⠀
 
           11/11/1111 11:11PM
-             CREDITS PAGE</p>
+  THIS CREDITS PAGE USES JAVASCRIPT</p>
+             
                 <p class="rec-p">
                     --------------------------------------------
                 </p>
-                <div class="twoparts">
-                    
-                </div>
+               
+                <div class="credits-part">
+                    <div class="credits-halves">
+                        <p><a href="https://nekoweb.org" target="_blank">NEKOWEB</a> hosts my site (the goat)</p>
+                        <p>$<span class="price">0.01</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="https://atabook.org" target="_blank">ATABOOK</a> hosts my guestbook</p>
+                        <p>$<span class="price">0.01</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="https://github.com/ezekielaquino/Marquee3000" target="_blank">MARQUEE3000</a> js marquee</p>
+                        <p>$<span class="price">1.27</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="https://www.w3schools.com/w3css/w3css_tabulators.asp" target="_blank">W3.CSS TABS</a> /diary page nav </p>
+                        <p>$<span class="price">1.39</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp" target="_blank">W3 DROPDOWN NAVBAR</a> /home page nav </p>
+                        <p>$<span class="price">2.99</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="https://github.com/biancarosa/lastfm-last-played" target="_blank">LAST.FM WIDGET</a> on /about </p>
+                        <p>$<span class="price">9.42</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="https://status.cafe">STATUS.CAFE</a> on /home /about</p>
+                        <p>$<span class="price">3.99</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="https://www.11ty.dev/" target="_blank">11TY</a> /blog SSG </p>
+                        <p>$<span class="price">1.11</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="https://www.npmjs.com/package/markdown-it-attrs" target="_blank">MARKDOWN-IT</a> /blog 11ty npm package </p>
+                        <p>$<span class="price">4.99</span></p>
+                    </div>
+                     <div class="credits-halves">
+                        <p><a href="https://x.com/22irum" target="_blank">22IRUM</a> /landing art </p>
+                        <p>$<span class="price">7.49</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="https://rice.place">RICE.PLACE</a> /sitemap inspo </p>
+                        <p>$<span class="price">2.24</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="https://yatagarasu.nekoweb.org">YATAGARASU</a> /credits inspo </p>
+                        <p>$<span class="price">4.22</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="https://animista.net/play/">ANIMISTA</a> modded jiggle animation </p>
+                        <p>$<span class="price">1.47</span></p>
+                    </div>
+                    <div class="credits-halves">
+                        <p><a href="#">YOU!!</a> it means a lot to me. </p>
+                        <p>$<span class="price">9.99</span></p>
+                    </div>
+                     <p class="rec-p for-totalcost">
+                        --------------------------------------------
+                     </p>
+                     <div class="thankyou">
+                        <!-- hungry caterpillar deco  -->
+                        <div class="credits-deco">
+                            <img src="/img/credits-hungry.webp" alt="the very hungry caterpillar" id="caterpillar" title="that poor guy is flipped and rotated in all the wrong ways.">
+                        </div>
+                        
+                        <p>ITEMS PURCHASED: <span id="itemCount"></span></p>
+                        <p>TOTAL: <span id="totalCost"></span></p>
+                        <hr>
+                        <p>☆*: .｡. o(≧▽≦)o .｡.:*☆</p>
+                        <p>THANK YOU FOR SHOPPING!</p>
+                     </div>
 
+                </div>
+               
             </div>
 
         </div>
 
+       
+        <script>
+            
+            // for the credits page 
+            function itemCounter() {
+                const items = document.getElementsByClassName('credits-halves').length;
+                document.getElementById("itemCount").innerHTML = items;     
+                
+                const cost = document.querySelectorAll("span.price");
+                let sum = 0;
+                cost.forEach(p => {
+                    sum += Number(p.textContent.trim());
+                });
+               
+                console.log(sum);
+                console.log(cost);
+                console.log(cost.length);
+                // cost.forEach(p => {
+                //     console.log("Text:", JSON.stringify(p.textContent));
+                //     console.log("Converted:", Number(p.textContent));
+                // });
+                document.getElementById("totalCost").innerHTML = '$' + sum.toFixed(2);
+                
+              
+            };
+            itemCounter();
+        </script>
     </body>
 </html>
